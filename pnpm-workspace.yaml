@@ -21,9 +21,15 @@ catalog:
   stats.js: ^0.17.0
   typescript: ^6.0.3
   vite: ^8.0.11
-  vite-plus: ^0.1.20
+  vite-plus: https://pkg.pr.new/voidzero-dev/vite-plus@1633
   void: 0.7.3
   vue: ^3.5.33
   vue-tsc: ^3.2.7
 
 catalogMode: prefer
+
+minimumReleaseAge: 4320
+minimumReleaseAgeExclude:
+  - vite-plus
+  - "@voidzero-dev/*"
+blockExoticSubdeps: false
