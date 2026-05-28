@@ -1,11 +1,29 @@
 packages:
   - packages/*
   - tools/*
+blockExoticSubdeps: false
+minimumReleaseAge: 60
+minimumReleaseAgeExclude:
+  - vite-plus
+  - "@voidzero-dev/*"
+  - "@oxc-project/*"
+  - "@oxlint/*"
+  - oxlint
+  - oxfmt
+  - oxlint-tsgolint
+  - vitest
+  - "@vitest/*"
 allowBuilds:
   better-sqlite3: true
+  edgedriver: false
   esbuild: true
+  geckodriver: false
   sharp: true
   workerd: true
+
+overrides:
+  "@voidzero-dev/vite-plus-core": "https://pkg.pr.new/voidzero-dev/vite-plus/@voidzero-dev/vite-plus-core@5577b0154f33d1480a3c96347e94fa5d2094de2e"
+  "@voidzero-dev/vite-plus-prompts": "https://pkg.pr.new/voidzero-dev/vite-plus/@voidzero-dev/vite-plus-prompts@5577b0154f33d1480a3c96347e94fa5d2094de2e"
 
 catalog:
   "@lucide/vue": ^1.12.0
@@ -24,8 +42,8 @@ catalog:
   stats.js: ^0.17.0
   typescript: ^6.0.3
   unplugin-vue: ^7.2.0
-  vite: ^8.0.11
-  vite-plus: ^0.1.20
+  vite: "npm:@voidzero-dev/vite-plus-core@latest"
+  vite-plus: "https://pkg.pr.new/voidzero-dev/vite-plus@1588"
   void: 0.7.3
   vue: ^3.5.33
   vue-tsc: ^3.2.7
