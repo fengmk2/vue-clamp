@@ -22,6 +22,7 @@
   "devDependencies": {
     "@types/node": "catalog:",
     "@vitejs/plugin-vue": "catalog:",
+    "@vitest/browser-playwright": "catalog:",
     "@vue-macros/define-render": "catalog:",
     "@vue/compiler-dom": "catalog:",
     "@vue/compiler-sfc": "catalog:",
