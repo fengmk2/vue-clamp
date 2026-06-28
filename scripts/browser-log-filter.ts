@@ -1,4 +1,4 @@
-import type { Logger, Plugin, ViteDevServer } from "vite";
+import type { Logger, Plugin, ViteDevServer } from "vite-plus";
 
 const mutedBrowserLogs = ["ResizeObserver loop completed with undelivered notifications."];
 

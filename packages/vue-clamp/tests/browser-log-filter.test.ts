@@ -2,7 +2,7 @@ import { EventEmitter } from "node:events";
 import { describe, expect, it, vi } from "vite-plus/test";
 import { browserLogFilter } from "../../../scripts/browser-log-filter.ts";
 
-import type { Logger, ViteDevServer } from "vite";
+import type { Logger, ViteDevServer } from "vite-plus";
 
 function createLogger(): Logger & { error: Logger["error"] } {
   return {
