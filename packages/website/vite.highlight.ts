@@ -1,5 +1,5 @@
 import { readFile } from "node:fs/promises";
-import type { Plugin } from "vite";
+import type { Plugin } from "vite-plus";
 import { highlightCode, type HighlightLanguage } from "./src/highlight.ts";
 import { highlightedPkgManagers, installCommands } from "./src/installCommands.ts";
 
